@@ -1,11 +1,13 @@
 /*Maak hier jouw CSS!*/
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
-                    /*Mobile first*/
-/*@media screen and (max-width: 576px) {*/
+/*Mobile first*/
+
 .grid-container {
     background-color: #7871AA;
     color: #CCA7A2;
@@ -21,14 +23,13 @@
             "aside-right-bottom"
             "footer";
 }
-/*}*/
 
-                    /*Desktop properties*/
+/*Desktop properties*/
 
 @media screen and (min-width: 576px) {
     .grid-container {
-        grid-template-columns: 2fr 1fr 1fr ;
-        grid-template-rows: 50px 190px 100px auto 50px ;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
         grid-template-areas:
             "top-left top-right top-right"
             "aside-left top-right top-right"
@@ -42,6 +43,13 @@
 .grid-item {
     background-color: #4E5283;
     color: #D9BBF9;
+    font-family: 'Sedgwick Ave', cursive;
+    border-radius: 10%;
+    border-style: dashed;
+    border-bottom-color: #CCA7A2;
+    border-top-color: #7871AA;
+    border-left-color: #BEEE62;
+    border-right-color: gray;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -60,6 +68,7 @@
 
 .header-right {
     grid-area: top-right;
+    background-image: url("assets/20210824_152825.jpg");
 }
 
 .aside-right {
@@ -68,6 +77,9 @@
 
 .middle {
     grid-area: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .dynamic {
@@ -77,6 +89,18 @@
 
 .footer {
     grid-area: footer;
+}
+
+a:link {
+    color: antiquewhite;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: #70AE6E;
 }
 
 
